@@ -1,0 +1,181 @@
+<!-- Carly Barlow
+IS201 Gaskin 
+April 25 2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarlyTaylorSwift</title>
+    <link rel="stylesheet" href="/css/scratchstyle.css">
+</head>
+<body class="body">
+    <a href="/ScratchPage.html" id="top">Taylor Swift</a> |
+    <a href="/post.html">Carly's Resume</a> |
+    <a href="/index.html">Link to Professtional Website</a> <br><br>
+
+
+    <h4 class="TaylorHeading">Taylor Swift</h4>
+
+    <div class="TaylorImage">
+        <img src="/assets/img/TaylorEraTour.webp" height="300" alt="Taylor Swift Performing at the Eras Tour" >
+    </div>
+    
+
+    <p class="Taylordescription">Taylow Swift is taking the world by a storm right now. Her sold out Era's tour is flooding the pages of the media. Fans can't get enough of her 3.5 hour performance with songs from her 10 award winning albums.</p>
+
+    <p>&nbsp;</p>
+
+    <p class="TopRankingTitle">My Current Top 10 Taylor Swift Songs</p>
+
+    <ol>
+        <li>Getaway Car
+            <ul>
+                <li>Reputation Album</li>
+                <li>The bridge of this song is the Reason for it's high ranking. It never misses.</li>
+            </ul>
+        </li>
+        <li>Enchanted
+            <ul>
+                <li>Speak Now Album</li>
+                <li>How can you not scream this at the top of your lungs everytime it comes on?</li>
+            </ul>
+        </li>
+        <li>Love Story
+            <ul>
+                <li>Fearless Album</li>
+                <li>A classic that I have listened to for as long as I can remember. A banger no matter the crowd</li>
+            </ul>
+        </li>
+        <li>You're on Your Own Kid
+            <ul>
+                <li>Midnights Album</li>
+                <li>Makes me cry and feel sentimental, but I love it.</li>
+            </ul>
+        </li>
+        <li>All too Well (10 Minute Version)
+            <ul>
+                <li>Red Album</li>
+                <li>I know everyword, and I will sing all 10 minutes of it everytime it comes on.</li>
+            </ul>
+        </li>
+        <li>Wildest Dreams
+            <ul>
+                <li>1989 ALbum</li>
+                <li>Makes me feel on top of the world when I listen to this.</li>
+            </ul>
+        </li>
+        <li>You Belong with me 
+            <ul>
+                <li>Fearless Album</li>
+                <li>Probably my favorite song from ages 7-14.</li>
+            </ul>
+        </li>
+        <li>Our Song
+            <ul>
+                <li>Debute Album</li>
+                <li>Makes me miss country Taylor. Makes me want to slam a screen door. </li>
+            </ul>
+        </li>
+        <li>Cruel Summer
+            <ul>
+                <li>Lover Album</li>
+                <li>Opening song to her tour, so obviously I'm obsessed. Lover Era hits different.</li>
+            </ul>
+        </li>
+        <li>August
+            <ul>
+                <li>Folklore Album</li>
+                <li>There is something so peaceful about this song. Also my favorite month of the year so how can I not love this song.</li>
+            </ul>
+        </li>
+    
+    <p>&nbsp;</p>
+
+    <div class="TopRankingTitle">
+        <p>Random Embedded Youtube Video</p>
+     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          playerVars: {
+            'playsinline': 1
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+    
+    
+    </ol>
+        <h5>This is my Tableau Dashboard Online.</h5>
+        <div class='tableauPlaceholder' id='viz1682454640500' style='position: relative'>
+            <noscript><a href='#'><img alt='Is Your County Obese?                           
+                Select your county to see how it compares with other counties in the country                  ' 
+                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ob&#47;ObsityGraph&#47;Obesity&#47;1_rss.png' style='border: none' />
+            </a></noscript><object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='ObsityGraph&#47;Obesity' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ob&#47;ObsityGraph&#47;Obesity&#47;1.png' /> 
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' /></object></div>                
+                <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1682454640500');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+                else { vizElement.style.width='100%';vizElement.style.height='827px';}                     
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);   </script>
+       
+       <div class="common footer">
+            www.CarlyTaylorSwift.com | &copy; | Carly Barlow
+        </div>
+</body>
+</html>
